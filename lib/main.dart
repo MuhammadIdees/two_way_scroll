@@ -34,7 +34,6 @@ class ListItem extends StatelessWidget {
   }
 }
 
-/// This widget is for the basic appearance of the app
 class TwoWayScroll extends StatelessWidget {
   // title of the application
   static final title = 'Two Way Scroll';
@@ -56,24 +55,6 @@ class TwoWayScroll extends StatelessWidget {
   }
 }
 
-/**
- *
- *  I didn't find any way to make a list item rotate properly in sliver list
- *  even though the item themselves rotated but the list only scrolled when
- *  the items were horizontal and couldn't adjust elements when they were
- *  vertical.
- *
- *  What is done to make this word is I have used the rotated box (which get's
- *  the job done of scrolling horizontally as well as vertically) and then rotated
- *  the rotated box using Transform.rotate for a smooth rotation along with a
- *  Transform.translate to keep everything in place.
- *
- *  To orchestrate the animation each item some calculations were took in consideration
- *  keeping the item's height and width in mind and some factors were taken in
- *  account which can be observed in the code below to make the code flexible
- *  enough for item of any height and width.
- *
- **/
 
 /// Class containing the animations of a list item
 class ListItemAnimation extends AnimatedWidget {
